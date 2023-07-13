@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MatchGame.MainPage"
+             Shell.NavBarIsVisible="False"
+             Title="Math Game Indel" >
+
+    <ScrollView BackgroundColor="White">
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+             Source="descarga.gif" IsAnimationPlaying="True" HeightRequest="200" HorizontalOptions="Center" />
+
+            <Label
+                Text="Match Game 2431186" x:Name="lblPrincipal"
+                FontSize="Large" HorizontalOptions="Center" TextColor="Black"/>
+
+            <Label
+            x:Name="Timer"
+            Text="0.000"
+            TextColor="Black"
+            HorizontalTextAlignment="Center"/>
+
+            <Button
+                x:Name="Inicio"
+                Clicked="Inicio_Clicked"
+                Text="Iniciar"
+                BackgroundColor="DarkViolet"
+                TextColor="White"/>
+
+            <Button x:Name="restart"
+                    Text="Reiniciar juego"      
+                    BackgroundColor="DarkViolet"
+                    TextColor="White"
+                    Clicked="restart_Clicked"/>
+
+            <Grid x:Name="Grid1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+
+                <Button Text="?" FontSize="36" Clicked="Button_Clicked"/>
+
+                <Button Text="?" FontSize="36" Grid.Column="1" Clicked="Button_Clicked"/>
+                <Button Text="?" FontSize="36" Grid.Column="2" Clicked="Button_Clicked"/>
+                <Button Text="?" FontSize="36" Grid.Column="3" Clicked="Button_Clicked"/>
+
+                <Button Text="?" FontSize="36" Grid.Row="1" Clicked="Button_Clicked"/>
+                <Button Text="?" FontSize="36" Grid.Row="1" Grid.Column="1" Clicked="Button_Clicked"/>
+                <Button Text="?" FontSize="36" Grid.Row="1" Grid.Column="2" Clicked="Button_Clicked"/>
+                <Button Text="?" FontSize="36" Grid.Row="1" Grid.Column="3" Clicked="Button_Clicked"/>
+
+                <Button Text="?" FontSize="36" Grid.Row="2" Clicked="Button_Clicked"/>
+
+
+                <Button Text="?" FontSize="36" Grid.Row="2" Grid.Column="1" Clicked="Button_Clicked"/>
+                <Button Text="?" FontSize="36" Grid.Row="2" Grid.Column="2"  Clicked="Button_Clicked"/>
+                <Button Text="?" FontSize="36" Grid.Row="2" Grid.Column="3"  Clicked="Button_Clicked"/>
+
+                <Button Text="?" FontSize="36" Grid.Row="3" Clicked="Button_Clicked"/>
+
+                <Button Text="?" FontSize="36" Grid.Row="3" Grid.Column="1"  Clicked="Button_Clicked"/>
+                <Button Text="?" FontSize="36" Grid.Row="3" Grid.Column="2"  Clicked="Button_Clicked"/>
+                <Button Text="?" FontSize="36" Grid.Row="3" Grid.Column="3"  Clicked="Button_Clicked"/>
+
+
+            </Grid>
+
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
